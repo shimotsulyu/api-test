@@ -1,0 +1,8 @@
+>>Para criar a imagem docker, usar comando
+docker build -t teste-db .
+
+>>Para criar o container da imagem, usar o comando
+docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=RootPassword -e MYSQL_DATABASE=Base -e MYSQL_USER=MainUser -e MYSQL_PASSWORD=MainPassword teste-db
+
+>>Para executar o container, usar o comando
+docker start -a -i idcontainer
