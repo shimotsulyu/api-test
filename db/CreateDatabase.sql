@@ -5,6 +5,9 @@ CREATE TABLE Produtos (
     produto varchar(100),
     custo float,
     venda float,
+    data_cadastro datetime,
+    data_alteracao datetime,
+    quantidade int,
     PRIMARY KEY (id)
 );
 
